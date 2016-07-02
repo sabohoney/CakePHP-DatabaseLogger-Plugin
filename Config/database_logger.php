@@ -6,7 +6,7 @@
   */
 $config = array(
   'DatabaseLogger' => array(
-    'write' => 'default', //DataSource to write to.
-    'read' => 'default', //Dadtasource to read from.
+    'write' => 'plugin', //DataSource to write to.
+    'read' => 'plugin', //Dadtasource to read from.
   )
 );

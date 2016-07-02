@@ -1,5 +1,9 @@
 <?php 
-class DatabaseLoggerSchema extends CakeSchema {
+class LogsSchema extends CakeSchema {
+
+	public $file = 'logs.php';
+
+	public $connection = 'plugin';
 
 	public function before($event = array()) {
 		return true;

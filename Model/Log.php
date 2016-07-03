@@ -5,7 +5,7 @@ class Log extends DatabaseLoggerAppModel {
 	var $searchFields = array('Log.type');
 	
 	function beforeSave($options = array()){
-		$this->data[$this->alias]['ip'] = env('REMOTE_ADDR');
+		$this->data[$this->alias]['ip'] = CakeRequest::clientIp(false);;
 		$this->data[$this->alias]['hostname'] = env('HTTP_HOST');
 		$this->data[$this->alias]['uri'] = env('REQUEST_URI');
 		$this->data[$this->alias]['refer'] = env('HTTP_REFERER');

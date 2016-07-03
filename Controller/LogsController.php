@@ -29,7 +29,7 @@ class LogsController extends DatabaseLoggerAppController {
 	}
 	
 	function admin_export($filter = null){
-		$this->layout = 'csv';
+		$this->layout = false;
 		if(!empty($this->data)){
 			$filter = $this->data['Log']['filter'];
 		}
